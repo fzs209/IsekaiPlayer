@@ -39,7 +39,7 @@
 
 ## 🛠 技術棧
 
-*   **最低系統要求**：Android 13 (API 33)
+*   **最低系統要求**：Android 12 (API 31)
 *   **UI 框架**：Jetpack Compose (Material 3)
 *   **導航**：Navigation3
 *   **相依性注入**：Koin

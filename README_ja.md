@@ -39,7 +39,7 @@
 
 ## 🛠 技術スタック
 
-*   **最小要件**: Android 13 (API 33)
+*   **最小要件**: Android 12 (API 31)
 *   **UI**: Jetpack Compose (Material 3)
 *   **ナビゲーション**: Navigation3
 *   **依存関係注入**: Koin

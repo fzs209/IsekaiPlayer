@@ -23,6 +23,7 @@ import android.app.PendingIntent
 import android.app.Service
 import android.content.Intent
 import android.content.pm.ServiceInfo
+import android.os.Build
 import android.os.IBinder
 import com.fiepi.media.domain.model.media.ConflictDecision
 import com.fiepi.media.domain.model.media.ConflictResolution
@@ -310,11 +311,15 @@ class FileOperationService : Service() {
             bytesPerSecond = 0L,
             fileName = ""
         )
-        startForeground(
-            NotificationController.NOTIFICATION_ID_FILE_OPERATION,
-            notification,
-            ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC
-        )
+        if (Build.VERSION.SDK_INT >= 34) {
+            startForeground(
+                NotificationController.NOTIFICATION_ID_FILE_OPERATION,
+                notification,
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC
+            )
+        } else {
+            startForeground(NotificationController.NOTIFICATION_ID_FILE_OPERATION, notification)
+        }
     }
 
     private fun updateNotification(

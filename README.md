@@ -39,7 +39,7 @@ IsekaiPlayer is a powerful, modern media player for Android designed to bridge t
 
 ## 🛠 Tech Stack
 
-*   **Minimum Requirement**: Android 13 (API 33)
+*   **Minimum Requirement**: Android 12 (API 31)
 *   **UI**: Jetpack Compose (Material 3)
 *   **Navigation**: Navigation3
 *   **Dependency Injection**: Koin

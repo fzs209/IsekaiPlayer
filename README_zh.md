@@ -39,7 +39,7 @@
 
 ## 🛠 技术栈
 
-*   **最低系统要求**：Android 13 (API 33)
+*   **最低系统要求**：Android 12 (API 31)
 *   **UI 框架**：Jetpack Compose (Material 3)
 *   **导航**：Navigation3
 *   **依赖注入**：Koin
